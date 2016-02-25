@@ -29,7 +29,10 @@ namespace ExtJs4Demo.Controllers
                         {
                             Id = b.Id,
                             Title = b.Title,
-                            AuthorName = b.Author.Name
+                            AuthorName = b.Author.Name,
+                            Year = b.Year,
+                            Genre = b.Genre,
+                            Price = b.Price
                         };
             return books;
         }

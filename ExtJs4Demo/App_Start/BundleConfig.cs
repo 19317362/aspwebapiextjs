@@ -23,6 +23,13 @@ namespace ExtJs4Demo
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/extcss").Include(
+                "~/Scripts/extjs/resources/css/ext-all-neptune.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/ext").Include(
+                "~/Scripts/extjs/ext-all.js",
+                "~/Scripts/app/application.js"));
         }
     }
 }
